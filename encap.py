@@ -1,14 +1,23 @@
-class Encaphype:
+class Protected:
     def __init__(self):
-        self.__privateHype = 50
+        self._protectedpie = 0
 
-    def getEncap(self):
-        print(self.__privateHype)
+obj = Protected()
+obj._protectedpie = 40
+print(obj._protectedpie)
 
-    def setEncap(self, envap):
-        self.__privateHype = envap
+class Protprivate:
+    def __init__(self):
+        self.__privatepie = 30
 
-obj = Encaphype()
-obj.getEncap()
-obj.setEncap(50)
-obj.getEncap()
+    def getpie(self):
+        print(self.__privatepie)
+
+    def setpie(self, private):
+        self.__privatepie = private
+
+
+obj = Protprivate()
+obj.getpie()
+obj.setpie(30)
+obj.getpie()
